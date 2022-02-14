@@ -1,0 +1,169 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit&display=swap');
+
+:root{
+  --cyan: hsl(178, 100%, 50%);
+  --soft-blue: hsl(215, 51%, 70%);
+}
+
+
+*, *::after, *::before {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+::selection{
+  background-color: hsl(251, 71%, 12%);
+  color: white;
+}
+
+ul, ol {
+  list-style-type: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+body {
+  font-family: 'Outfit', sans-serif;
+  background: #0D1A2C;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#main-container {
+  display: inline-block;
+  width: 33%;
+  border-radius: 26px 26px 50px 50px / 26px 26px 32px 32px;
+  padding: 16px;
+  background: #0C1728;
+}
+
+#card-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  border-radius: 15px;
+  padding: 20px;
+  margin-bottom: 25px;
+  background: #15273E;
+}
+
+#nft {
+  border-radius: 8px;
+  filter: blur(6px);
+  transition: 300ms ease-in-out;
+}
+
+#nft:hover {
+  filter: blur(0);
+  cursor: pointer;
+  transition: 300ms ease-in-out;
+}
+
+#text-content h2 {
+  margin: 18px 0;
+  color: white;
+}
+
+#text-content h2:hover {
+  margin: 18px 0;
+  color: var(--cyan);
+  cursor: pointer;
+  transition: 300ms ease-in-out;
+}
+
+#text-content p {
+  margin: 18px 0;
+  font-size: 18px;
+  color: var(--soft-blue);
+}
+
+#description {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 18px;
+}
+
+#description .infos {
+  display: flex;
+  align-items: center;
+  margin-bottom: 18px;
+}
+
+#price {
+  margin-left: 6px;
+  color: var(--cyan);
+}
+
+#date-post {
+  margin-left: 6px;
+  color: var(--soft-blue);
+}
+
+#creator {
+  display: flex;
+  align-items: center;
+  margin: 18px 0;
+  color: white;
+}
+
+#creator img {
+  height: 45px;
+  margin-right: 20px;
+  border: 1px solid white;
+  border-radius: 50%
+}
+
+#creator a {
+  color: white;
+}
+
+#creator span {
+  font-weight: 600;
+}
+
+#creator span:hover {
+  font-weight: 600;
+  color: var(--cyan);
+  cursor: pointer;
+  transition: 300ms ease-in-out;
+}
+
+@media screen and (max-width: 1140px) {
+  #main-container {
+    display: inline-block;
+    width: 40%;
+  }
+}
+
+@media screen and (max-width: 910px) {
+  #main-container {
+    display: inline-block;
+    width: 50%;
+  }
+}
+
+@media screen and (max-width: 590px) {
+  #main-container {
+    display: inline-block;
+    width: 70%;
+  }
+}
+
+@media screen and (max-width: 420px) {
+  #main-container {
+    display: inline-block;
+    width: 90%;
+  }
+}
+
+@media screen and (max-width: 375px) {
+  #main-container {
+    display: inline-block;
+    width: 100%;
+  }
+}
